@@ -128,7 +128,7 @@
   </symbol>
 
   <symbol id='plus-blue' xmlns="http://www.w3.org/2000/svg" fill="none">
-    <path stroke="#4888FF" stroke-linecap="round" stroke-linejoin="round" d="M8 3.333v9.334M3.333 8h9.334"/>
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8 3.333v9.334M3.333 8h9.334"/>
   </symbol>
 
   <symbol id='skull-blue' xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none">

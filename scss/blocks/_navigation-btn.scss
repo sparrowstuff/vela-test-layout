@@ -1,0 +1,50 @@
+.navigation-btn {
+	padding: 1rem 1.87rem;
+	@include flexCenter(column, center, center);
+	gap: 0.31rem;
+	transition: background-color $transition-300;
+	$root: &;
+
+	// &:hover, &:focus-visible {
+
+	// }
+
+	&--transform {
+		background-color: $grey;
+
+		#{$root}__main-line {
+			opacity: 0;
+		}
+
+		#{$root}__top-line {
+			transform: translateY(0.41rem) rotate(45deg);
+			background-color: $main;
+		}
+
+		#{$root}__bottom-line {
+			transform: translateY(-0.41rem) rotate(-45deg);
+			background-color: $main;
+		}
+	}
+
+	&__top-line,
+	&__bottom-line,
+	&__main-line {
+		display: block;
+		background-color: $white;
+		border-radius: 0.5rem;
+		height: 0.12rem;
+		transition: transform $transition-300, opacity $transition-300,
+			background-color $transition-300;
+	}
+
+	&__top-line,
+	&__bottom-line {
+		width: 2.56rem;
+	}
+
+	&__main-line {
+		width: 1.5rem;
+		align-self: flex-start;
+	}
+}

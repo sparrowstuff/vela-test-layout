@@ -103,20 +103,252 @@
 			<div class="header__main-menu">
 				<div class="container">
 					<div class="header__main-navigation">
-						<a
-							class="header__main-link"
-							href="#"
-							aria-label="Переход на главную страницу"
-						>
-							<svg
-								class="header__main-logo"
-								width=""
-								height=""
-								aria-hidden="true"
+						<div class="header__left-menu">
+							<a
+								class="header__main-link"
+								href="#"
+								aria-label="Переход на главную страницу"
 							>
-								<use xlink:href="images/sprite.svg#main-logo"></use>
-							</svg>
-						</a>
+								<svg
+									class="header__main-logo"
+									width="41"
+									height="41"
+									aria-hidden="true"
+								>
+									<use xlink:href="images/sprite.svg#main-logo"></use>
+								</svg>
+							</a>
+							<nav class="main-nav">
+								<div class="main-nav__top-menu">
+									<button
+										class="nav-menu__navigation-btn btn navigation-btn"
+										id="navigation-btn"
+										type="button"
+										aria-label="Открыть навигационное меню"
+									>
+										<span class="navigation-btn__top-line"></span>
+										<span class="navigation-btn__main-line"></span>
+										<span class="navigation-btn__bottom-line"></span>
+									</button>
+									<div class="custom-search">
+										<label for="search-menu" class="custom-search__label">
+											<input
+												type="search"
+												class="custom-search__input"
+												placeholder="Поиск товаров..."
+												id="search-menu"
+												name="search-menu"
+											/>
+											<button
+												class="custom-search__btn btn btn--search"
+												type="button"
+												aria-label="Начать поиск товаров"
+											>
+												Найти
+											</button>
+										</label>
+									</div>
+									<nav class="socials-menu">
+										<a
+											class="socials-menu__telegram-link"
+											href="#"
+											aria-label="Перейти в Telegram"
+										>
+											<svg
+												class="socials-menu__socials-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#telegram"></use>
+											</svg>
+										</a>
+										<a
+											class="socials-menu__whatsapp-link"
+											href="#"
+											aria-label="Перейти в WhatsApp"
+										>
+											<svg
+												class="socials-menu__socials-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#whatsapp"></use>
+											</svg>
+										</a>
+									</nav>
+								</div>
+								<nav class="main-nav__bottom-menu">
+									<button
+										class="main-nav__navigation-btn main-nav__navigation-btn--action btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#flame-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Акции</span
+										></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#thunder-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Горячее предложение</span
+										></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#skull-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Подарочные наборы</span
+										></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#paper-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>События</span
+										></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#ork-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Наши бренды</span
+										>
+									</button>
+								</nav>
+							</nav>
+						</div>
+						<div class="header__right-menu">
+							<div class="header__right-menu-inner">
+								<div class="header__bottom-language-menu">
+									<svg
+										class="header__world-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#world"></use>
+									</svg>
+									<div class="header__language-btns">
+										<button
+											class="header__language-btn-ru btn btn--language btn--active"
+											type="button"
+											aria-label="Переключить язык на Русский"
+										>
+											RU
+										</button>
+										<button
+											class="header__language-btn-en btn btn--language"
+											type="button"
+											aria-label="Переключить язык на Английский"
+										>
+											EN
+										</button>
+									</div>
+								</div>
+								<div class="header__right-menu-btns">
+									<div class="header__right-menu-btns-inner">
+										<button
+											class="header__action-btn btn btn--action"
+											type="button"
+											aria-label="Во вкладку избранное"
+										>
+											<svg
+												class="header__action-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#heart"></use>
+											</svg></button
+										><button
+											class="header__action-btn btn btn--action"
+											type="button"
+											aria-label="Во вкладку профиль"
+										>
+											<svg
+												class="header__action-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#hunter"></use>
+											</svg></button
+										><button
+											class="header__action-btn btn btn--action"
+											type="button"
+											aria-label="Во вкладку сохраненное"
+										>
+											<svg
+												class="header__action-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#chest"></use>
+											</svg>
+										</button>
+									</div>
+									<button
+										class="header__computer-btn btn btn--computer"
+										type="button"
+									>
+										<svg
+											class="header__computer-plus-icon"
+											width="16"
+											height="16"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#plus-blue"></use>
+										</svg>
+										<span class="header__computer-btn-text"
+											>Собрать компьютер</span
+										>
+									</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

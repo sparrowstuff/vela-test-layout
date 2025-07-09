@@ -1,0 +1,25 @@
+.main-nav {
+	$root: &;
+	@include flexCenter(column, flex-start, unset);
+	gap: 1rem;
+
+	&__top-menu {
+		@include flexCenter(row, flex-start, unset);
+		gap: 1.1vw;
+	}
+
+	&__bottom-menu {
+		@include flexCenter(row, flex-start, unset);
+		gap: 1.2vw;
+
+		@media (max-width: 84.37rem) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1.2vw 1rem;
+		}
+	}
+
+	&__navigation-btn--action {
+		padding: 0.75rem 0.75rem 0.75rem 1rem;
+	}
+}
