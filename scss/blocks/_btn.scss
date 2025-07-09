@@ -1,0 +1,21 @@
+.btn {
+	@include flexCenter(row, center, center);
+	background-color: $blue;
+	padding: 1rem 1.87rem 1rem 1.87rem;
+	border-radius: 0.5rem;
+	color: $white;
+	border: unset;
+
+	&--language {
+		background: transparent;
+		padding: unset;
+		color: $main;
+		opacity: 0.4;
+	}
+
+	&--active {
+		color: $main;
+		opacity: 1;
+		position: relative;
+	}
+}

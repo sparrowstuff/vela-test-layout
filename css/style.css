@@ -323,7 +323,7 @@ html {
 body {
   background-color: #ffffff;
   color: #343a3f;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   font-family: "Maza", "Arial", sans-serif;
@@ -395,7 +395,7 @@ button {
 
 @font-face {
   font-family: "Maza";
-  src: url("./fonts/Maza W00 Regular.woff2") format("woff2"), url("./fonts/Maza W00 Regular.woff") format("woff");
+  src: url("../fonts/Maza W00 Regular.woff2") format("woff2"), url("../fonts/Maza W00 Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -405,4 +405,208 @@ button {
   width: 100%;
   padding: 0 2.5rem;
   margin: 0 auto;
+}
+@media (max-width: 31.25rem) {
+  .container {
+    max-width: 31.25rem;
+    padding: 0 0.93rem;
+  }
+}
+
+.header {
+  width: 100dvw;
+}
+.header__top-menu {
+  background-color: #f4f4f4;
+  padding: 0.5rem 0;
+}
+.header__top-menu-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 60.62rem) {
+  .header__top-menu-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
+    justify-content: unset;
+  }
+}
+@media (max-width: 31.25rem) {
+  .header__top-menu-inner {
+    display: flex;
+  }
+}
+.header__top-menu-help {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+@media (max-width: 60.62rem) {
+  .header__top-menu-help {
+    justify-content: unset;
+    flex-direction: column;
+    grid-row: span 2;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 31.25rem) {
+  .header__top-menu-help {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.header__location-text, .header__phone-text, .header__top-menu-info-text, .header__top-menu-info-time, .header__top-menu-navigation-link {
+  font-size: 0.87rem;
+  line-height: 100%;
+  transition: color ease-in 0.3s;
+}
+.header__location-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
+.header__location-link:hover .header__location-text, .header__location-link:focus-visible .header__location-text {
+  color: #4888ff;
+}
+@media (max-width: 60.62rem) {
+  .header__location-link {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 31.25rem) {
+  .header__location-link {
+    display: none;
+  }
+}
+.header__phone-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.5rem;
+}
+.header__phone-link:hover .header__phone-text, .header__phone-link:focus-visible .header__phone-text {
+  color: #4888ff;
+}
+@media (max-width: 60.62rem) {
+  .header__phone-link {
+    align-self: flex-start;
+  }
+}
+@media (max-width: 31.25rem) {
+  .header__phone-link {
+    align-self: unset;
+  }
+}
+.header__top-menu-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 0.75rem;
+}
+@media (max-width: 60.62rem) {
+  .header__top-menu-info {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 31.25rem) {
+  .header__top-menu-info {
+    display: none;
+  }
+}
+.header__phone-icon {
+  padding: 0 0 0 0.25rem;
+}
+.header__location-icon {
+  color: #343a3f;
+  opacity: 0.5;
+}
+.header__top-menu-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: unset;
+  gap: 1rem;
+}
+@media (max-width: 60.62rem) {
+  .header__top-menu-navigation {
+    justify-content: end;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+@media (max-width: 31.25rem) {
+  .header__top-menu-navigation {
+    display: none;
+  }
+}
+.header__top-menu-navigation-link:hover, .header__top-menu-navigation-link:focus-visible {
+  color: #4888ff;
+}
+.header__top-language-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  gap: 0.07rem;
+}
+.header__top-language-menu .header__world-icon {
+  scale: 0.7;
+}
+@media (min-width: 31.25rem) {
+  .header__top-language-menu {
+    display: none;
+  }
+}
+.header__language-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.56rem;
+  font-size: 0.87rem;
+}
+.header__language-btn-ru::after {
+  content: "";
+  width: 1px;
+  height: 0.75rem;
+  background-color: #343a3f;
+  position: absolute;
+  top: 14%;
+  right: -0.31rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #4888ff;
+  padding: 1rem 1.87rem 1rem 1.87rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  border: unset;
+}
+.btn--language {
+  background: transparent;
+  padding: unset;
+  color: #343a3f;
+  opacity: 0.4;
+}
+.btn--active {
+  color: #343a3f;
+  opacity: 1;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

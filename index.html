@@ -25,7 +25,101 @@
 	</head>
 	<body>
 		<header class="header">
-			<div class="container"></div>
+			<div class="header__top-menu">
+				<div class="container">
+					<div class="header__top-menu-inner">
+						<div class="header__top-menu-help">
+							<div class="header__top-language-menu">
+								<svg
+									class="header__world-icon"
+									width="24"
+									height="24"
+									aria-hidden="true"
+								>
+									<use xlink:href="images/sprite.svg#world"></use>
+								</svg>
+								<div class="header__language-btns">
+									<button
+										class="header__language-btn-ru btn btn--language btn--active"
+										type="button"
+										aria-label="Переключить язык на Русский"
+									>
+										RU
+									</button>
+									<button
+										class="header__language-btn-en btn btn--language"
+										type="button"
+										aria-label="Переключить язык на Английский"
+									>
+										EN
+									</button>
+								</div>
+							</div>
+							<a
+								class="header__location-link"
+								href="#"
+								aria-label="Выбрать местоположение"
+							>
+								<svg
+									class="header__location-icon"
+									aria-hidden="true"
+									width="12"
+									height="14"
+								>
+									<use xlink:href="./images/sprite.svg#location"></use>
+								</svg>
+								<span class="header__location-text">Сайлент-Хилл</span>
+							</a>
+							<a
+								class="header__phone-link"
+								href="tel:+75555553750"
+								aria-label="Позвонить на горячую линию"
+							>
+								<svg
+									class="header__phone-icon"
+									aria-hidden="true"
+									width="16"
+									height="16"
+								>
+									<use xlink:href="images/sprite.svg#phone"></use>
+								</svg>
+								<span class="header__phone-text">+7 555 555-37-50</span>
+							</a>
+						</div>
+						<div class="header__top-menu-info">
+							<span class="header__top-menu-info-text">Ежедневно</span>
+							<span class="header__top-menu-info-time"
+								>9:00 &nbsp;&mdash;&nbsp; 21:00</span
+							>
+						</div>
+						<nav class="header__top-menu-navigation">
+							<a class="header__top-menu-navigation-link" href="#">Доставка</a
+							><a class="header__top-menu-navigation-link" href="#">Оплата</a
+							><a class="header__top-menu-navigation-link" href="#">Контакты</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header__main-menu">
+				<div class="container">
+					<div class="header__main-navigation">
+						<a
+							class="header__main-link"
+							href="#"
+							aria-label="Переход на главную страницу"
+						>
+							<svg
+								class="header__main-logo"
+								width=""
+								height=""
+								aria-hidden="true"
+							>
+								<use xlink:href="images/sprite.svg#main-logo"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
 		</header>
 	</body>
 </html>

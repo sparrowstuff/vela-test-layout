@@ -1,0 +1,171 @@
+.header {
+	width: 100dvw;
+	$root: &;
+
+	&__top-menu {
+		background-color: $grey;
+		padding: 0.5rem 0;
+	}
+
+	&__top-menu-inner {
+		@include flexCenter(row, center, space-between);
+
+		@media (max-width: 60.62rem) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0.5rem 1rem;
+			justify-content: unset;
+		}
+
+		@media (max-width: 31.25rem) {
+			display: flex;
+		}
+	}
+
+	&__top-menu-help {
+		@include flexCenter(row, center, space-between);
+		gap: 0.75rem;
+
+		@media (max-width: 60.62rem) {
+			justify-content: unset;
+			flex-direction: column;
+			grid-row: span 2;
+			justify-content: flex-start;
+		}
+
+		@media (max-width: 31.25rem) {
+			@include flexCenter(row, center, space-between);
+			width: 100%;
+		}
+	}
+
+	&__location-text,
+	&__phone-text,
+	&__top-menu-info-text,
+	&__top-menu-info-time,
+	&__top-menu-navigation-link {
+		font-size: $rem-087;
+		line-height: 100%;
+		transition: color $transition-300;
+	}
+
+	&__location-link {
+		@include flexCenter(row, center, space-between);
+		gap: 0.25rem;
+
+		&:hover,
+		&:focus-visible {
+			#{$root}__location-text {
+				color: $blue;
+			}
+		}
+
+		@media (max-width: 60.62rem) {
+			align-self: flex-start;
+		}
+
+		@media (max-width: 31.25rem) {
+			display: none;
+		}
+	}
+
+	&__phone-link {
+		@include flexCenter(row, center, unset);
+		gap: 0.5rem;
+
+		&:hover,
+		&:focus-visible {
+			#{$root}__phone-text {
+				color: $blue;
+			}
+		}
+
+		@media (max-width: 60.62rem) {
+			align-self: flex-start;
+		}
+
+		@media (max-width: 31.25rem) {
+			align-self: unset;
+		}
+	}
+
+	&__top-menu-info {
+		@include flexCenter(row, center, unset);
+		gap: 0.75rem;
+
+		@media (max-width: 60.62rem) {
+			justify-content: flex-end;
+		}
+
+		@media (max-width: 31.25rem) {
+			display: none;
+		}
+	}
+
+	&__phone-icon {
+		padding: 0 0 0 0.25rem;
+	}
+
+	&__location-icon {
+		color: $main;
+		opacity: 0.5;
+	}
+
+	&__top-menu-navigation {
+		@include flexCenter(row, center, unset);
+		gap: 1rem;
+
+		@media (max-width: 60.62rem) {
+			justify-content: end;
+			grid-column: 2 / 3;
+			grid-row: 2/ 3;
+		}
+
+		@media (max-width: 31.25rem) {
+			display: none;
+		}
+	}
+
+	&__top-menu-navigation-link {
+		&:hover,
+		&:focus-visible {
+			color: $blue;
+		}
+	}
+
+	&__top-language-menu {
+		@include flexCenter(row, center, space-between);
+		align-self: flex-start;
+		gap: 0.07rem;
+
+		// задать новую иконку мира в разметке или здесь сделать scale(так себе варик)
+
+		#{$root}__world-icon {
+			// width: 1rem;
+			// height: 1rem;
+			scale: 0.7;
+		}
+
+		@media (min-width: 31.25rem) {
+			display: none;
+		}
+	}
+
+	&__language-btns {
+		@include flexCenter(row, center, space-between);
+		gap: 0.56rem;
+		font-size: $rem-087;
+	}
+
+	&__language-btn-ru {
+		&::after {
+			content: '';
+			width: 1px;
+			height: 0.75rem;
+			background-color: $main;
+			position: absolute;
+			top: 14%;
+			right: -0.31rem;
+		}
+	}
+}
