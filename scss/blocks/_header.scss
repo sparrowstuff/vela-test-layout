@@ -180,11 +180,20 @@
 	&__main-navigation {
 		@include flexCenter(row, flex-start, space-between);
 		gap: 2.31rem;
+
+		@media (max-width: 65.62rem) {
+			gap: 1vw;
+		}
 	}
 
 	&__left-menu {
 		@include flexCenter(row, flex-start, space-between);
 		gap: 3.1vw;
+
+		@media (max-width: 64rem) {
+			gap: 1vw;
+			align-items: center;
+		}
 	}
 
 	&__main-link {
@@ -193,6 +202,21 @@
 		height: 5rem;
 		background-color: $blue;
 		border-radius: 50%;
+
+		@media (max-width: 64rem) {
+			width: 3.5rem;
+			height: 3.5rem;
+
+			#{$root}__main-logo {
+				scale: 0.7;
+			}
+		}
+	}
+
+	&__main-link--main {
+		@media (max-width: 43.75rem) {
+			display: none;
+		}
 	}
 
 	&__right-menu-inner {
@@ -213,6 +237,10 @@
 
 		@media (max-width: 83.75rem) {
 			align-self: flex-end;
+		}
+
+		@media (max-width: 64rem) {
+			display: none;
 		}
 	}
 
@@ -244,10 +272,25 @@
 		}
 	}
 
+	&__action-btn--withProduct {
+		position: relative;
+
+		&::before {
+			content: '20';
+			position: absolute;
+			top: -26%;
+			left: 74%;
+			width: 1.56rem;
+			height: 1.56rem;
+			background-color: $blue;
+			color: $white;
+			border-radius: 50%;
+			@include flexCenter(row, center, center);
+		}
+	}
+
 	&__computer-btn {
-		@include flexCenter(row, center, unset);
 		gap: 0.43rem;
-		color: $blue;
 		width: 100%;
 
 		transition: background-color $transition-300;

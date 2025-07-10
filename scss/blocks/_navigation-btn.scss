@@ -5,6 +5,10 @@
 	transition: background-color $transition-300;
 	$root: &;
 
+	@media (max-width: 64rem) {
+		padding: 0.78rem 0.4rem;
+	}
+
 	// &:hover, &:focus-visible {
 
 	// }
@@ -41,10 +45,24 @@
 	&__top-line,
 	&__bottom-line {
 		width: 2.56rem;
+
+		@media (max-width: 64rem) {
+			width: 1.4rem;
+		}
 	}
 
 	&__main-line {
 		width: 1.5rem;
 		align-self: flex-start;
+
+		@media (max-width: 64rem) {
+			width: 0.93rem;
+		}
+	}
+
+	&--main {
+		@media (max-width: 43.75rem) {
+			display: none;
+		}
 	}
 }

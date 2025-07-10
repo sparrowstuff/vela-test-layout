@@ -6,6 +6,10 @@
 	&__top-menu {
 		@include flexCenter(row, flex-start, unset);
 		gap: 1.1vw;
+
+		@media (max-width: 64rem) {
+			align-items: center;
+		}
 	}
 
 	&__bottom-menu {
@@ -17,6 +21,26 @@
 			grid-template-columns: repeat(3, 1fr);
 			gap: 1.2vw 1rem;
 		}
+
+		@media (max-width: 64rem) {
+			display: none;
+		}
+	}
+
+	&__navigation-btn {
+		&:hover,
+		&:focus-visible,
+		&:active {
+			#{$root}__navigation-btn-text {
+				color: $blue;
+			}
+		}
+	}
+
+	&__navigation-btn-text {
+		font-size: $rem-087;
+		line-height: 100%;
+		transition: color $transition-300;
 	}
 
 	&__navigation-btn--action {

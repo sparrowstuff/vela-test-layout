@@ -37,4 +37,10 @@
 			}
 		}
 	}
+
+	&--main {
+		@media (max-width: 64rem) {
+			display: none;
+		}
+	}
 }

@@ -42,10 +42,22 @@
 		padding: 0.68rem 0.65rem;
 	}
 
+	&--computer-main {
+		@media (max-width: 43.75rem) {
+			display: none;
+		}
+	}
+
 	&--action {
 		background-color: transparent;
 		border: 1px solid $grey;
 		border-radius: 0.25rem;
 		padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+	}
+
+	&--action-main {
+		@media (max-width: 43.75rem) {
+			display: none;
+		}
 	}
 }

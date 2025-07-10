@@ -105,7 +105,7 @@
 					<div class="header__main-navigation">
 						<div class="header__left-menu">
 							<a
-								class="header__main-link"
+								class="header__main-link header__main-link--main"
 								href="#"
 								aria-label="Переход на главную страницу"
 							>
@@ -119,9 +119,52 @@
 								</svg>
 							</a>
 							<nav class="main-nav">
+								<div class="main-nav__mobile-menu">
+									<div class="main-nav__mobile-menu-left">
+										<button
+											class="main-nav__navigation-btn btn navigation-btn"
+											id="navigation-btn-mobile"
+											type="button"
+											aria-label="Открыть навигационное меню"
+										>
+											<span class="navigation-btn__top-line"></span>
+											<span class="navigation-btn__main-line"></span>
+											<span class="navigation-btn__bottom-line"></span>
+										</button>
+										<button
+											class="header__action-btn btn btn--action btn--action-mobile"
+											type="button"
+											aria-label="Во вкладку профиль"
+										>
+											<svg
+												class="header__action-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#hunter"></use>
+											</svg>
+										</button>
+									</div>
+									<a
+										class="header__main-link"
+										href="#"
+										aria-label="Переход на главную страницу"
+									>
+										<svg
+											class="header__main-logo"
+											width="41"
+											height="41"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#main-logo"></use>
+										</svg>
+									</a>
+									<div class="main-nav__mobile-menu-right"></div>
+								</div>
 								<div class="main-nav__top-menu">
 									<button
-										class="nav-menu__navigation-btn btn navigation-btn"
+										class="main-nav__navigation-btn btn navigation-btn navigation-btn--main"
 										id="navigation-btn"
 										type="button"
 										aria-label="Открыть навигационное меню"
@@ -148,7 +191,7 @@
 											</button>
 										</label>
 									</div>
-									<nav class="socials-menu">
+									<nav class="socials-menu socials-menu--main">
 										<a
 											class="socials-menu__telegram-link"
 											href="#"
@@ -290,7 +333,7 @@
 								<div class="header__right-menu-btns">
 									<div class="header__right-menu-btns-inner">
 										<button
-											class="header__action-btn btn btn--action"
+											class="header__action-btn btn btn--action btn--action-main"
 											type="button"
 											aria-label="Во вкладку избранное"
 										>
@@ -303,7 +346,7 @@
 												<use xlink:href="images/sprite.svg#heart"></use>
 											</svg></button
 										><button
-											class="header__action-btn btn btn--action"
+											class="header__action-btn btn btn--action btn--action-main"
 											type="button"
 											aria-label="Во вкладку профиль"
 										>
@@ -316,7 +359,7 @@
 												<use xlink:href="images/sprite.svg#hunter"></use>
 											</svg></button
 										><button
-											class="header__action-btn btn btn--action"
+											class="header__action-btn header__action-btn--withProduct btn btn--action btn--action-main"
 											type="button"
 											aria-label="Во вкладку сохраненное"
 										>
@@ -331,7 +374,7 @@
 										</button>
 									</div>
 									<button
-										class="header__computer-btn btn btn--computer"
+										class="header__computer-btn btn btn--computer btn--computer-main"
 										type="button"
 									>
 										<svg
