@@ -1,0 +1,40 @@
+.choice-menu {
+	min-height: 26.68rem;
+	min-width: 55.75rem;
+	background-color: $white;
+	border-radius: 0.5rem;
+	transition: opacity $transition-300;
+	// pointer-events: none;
+	// opacity: 0;
+
+	&--show {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	&__main-wrapper {
+		@include flexCenter(row, flex-start, unset);
+		gap: 2.56rem;
+		padding: 1.87rem 0 1.43rem 0;
+	}
+
+	&__phones,
+	&__pc,
+	&__tv,
+	&__audio {
+		@include flexCenter(row, flex-start, unset);
+		gap: 2.56rem;
+		margin-top: 0.62rem;
+	}
+
+	&__inner-wrapper {
+		@include flexCenter(column, flex-start, unset);
+		gap: 1.93rem;
+	}
+
+	&__title {
+		font-size: $rem-187;
+		font-weight: 500;
+		line-height: 100%;
+	}
+}

@@ -5,6 +5,7 @@
 	border-radius: 0.5rem;
 	color: $white;
 	border: unset;
+	$root: &;
 
 	font-size: $rem-087;
 	color: $white;
@@ -43,7 +44,7 @@
 	}
 
 	&--computer-main {
-		@media (max-width: 43.75rem) {
+		@media (max-width: 64rem) {
 			display: none;
 		}
 	}
@@ -56,7 +57,22 @@
 	}
 
 	&--action-main {
-		@media (max-width: 43.75rem) {
+		@media (max-width: 64rem) {
+			display: none;
+		}
+	}
+
+	&--action-mobile {
+		width: 2.5rem;
+		height: 2.5rem;
+		padding: 0.62rem;
+
+		.header__action-icon {
+			color: $main;
+			scale: 0.8;
+		}
+
+		@media (min-width: 64rem) {
 			display: none;
 		}
 	}

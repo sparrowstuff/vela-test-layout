@@ -9,6 +9,7 @@
 
 		@media (max-width: 64rem) {
 			align-items: center;
+			margin-bottom: 0.68rem;
 		}
 	}
 
@@ -45,5 +46,21 @@
 
 	&__navigation-btn--action {
 		padding: 0.75rem 0.75rem 0.75rem 1rem;
+	}
+
+	&__mobile-menu {
+		@include flexCenter(row, center, space-between);
+		gap: 0.62rem;
+		width: 97%;
+
+		@media (min-width: 64rem) {
+			display: none;
+		}
+	}
+
+	&__mobile-left-menu,
+	&__mobile-right-menu {
+		@include flexCenter(row, center, space-between);
+		gap: 0.37rem;
 	}
 }

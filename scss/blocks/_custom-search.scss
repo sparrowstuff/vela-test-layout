@@ -25,14 +25,14 @@
 			width: 39vw;
 		}
 
-		@media (max-width: 43.75rem) {
+		@media (max-width: 64rem) {
 			width: 87vw;
 		}
 	}
 
 	&__btn {
 		position: absolute;
-		right: 0.25rem;
+		right: 0.8rem;
 		top: -0.5rem;
 	}
 }

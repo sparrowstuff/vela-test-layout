@@ -1,0 +1,48 @@
+.choice-list {
+	@include flexCenter(column, flex-start, unset);
+	$root: &;
+
+	&__item {
+		border-top: 1px solid $grey-border;
+		border-bottom: 1px solid $grey-border;
+		@include flexCenter(row, center, unset);
+		gap: 1rem;
+		padding: 0.81rem 1.43rem 0.81rem 1.87rem;
+		width: 100%;
+		cursor: pointer;
+		transition: background-color $transition-300;
+
+		&:first-child {
+			border-top: unset;
+		}
+
+		&:hover,
+		&:focus-visible,
+		&:active {
+			background-color: $grey-border;
+
+			#{$root}__arrow-icon {
+				color: $blue;
+			}
+		}
+	}
+
+	&__choice-title {
+		font-size: $rem-1;
+		line-height: 100%;
+		font-weight: 500;
+	}
+
+	&__arrow-icon {
+		margin-left: auto;
+		transition: color $transition-300;
+	}
+
+	&__link {
+		@include flexCenter(row, center, unset);
+		gap: 1rem;
+		font-weight: 500;
+		font-size: 1rem;
+		line-height: 100%;
+	}
+}

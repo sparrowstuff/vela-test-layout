@@ -120,9 +120,9 @@
 							</a>
 							<nav class="main-nav">
 								<div class="main-nav__mobile-menu">
-									<div class="main-nav__mobile-menu-left">
+									<div class="main-nav__mobile-left-menu">
 										<button
-											class="main-nav__navigation-btn btn navigation-btn"
+											class="main-nav__navigation-btn btn navigation-btn navigation-btn--mobile"
 											id="navigation-btn-mobile"
 											type="button"
 											aria-label="Открыть навигационное меню"
@@ -147,7 +147,7 @@
 										</button>
 									</div>
 									<a
-										class="header__main-link"
+										class="header__main-link header__main-link--mobile"
 										href="#"
 										aria-label="Переход на главную страницу"
 									>
@@ -160,7 +160,64 @@
 											<use xlink:href="images/sprite.svg#main-logo"></use>
 										</svg>
 									</a>
-									<div class="main-nav__mobile-menu-right"></div>
+									<div class="main-nav__mobile-right-menu">
+										<div
+											class="header__top-language-menu header__top-language-menu--mobile"
+										>
+											<svg
+												class="header__world-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#world"></use>
+											</svg>
+											<div class="header__language-btns">
+												<button
+													class="header__language-btn-ru btn btn--language btn--active"
+													type="button"
+													aria-label="Переключить язык на Русский"
+												>
+													RU
+												</button>
+												<button
+													class="header__language-btn-en btn btn--language"
+													type="button"
+													aria-label="Переключить язык на Английский"
+												>
+													EN
+												</button>
+											</div>
+										</div>
+										<button
+											class="header__action-btn btn btn--action btn--action-mobile"
+											type="button"
+											aria-label="Во вкладку избранное"
+										>
+											<svg
+												class="header__action-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#heart"></use>
+											</svg>
+										</button>
+										<button
+											class="header__action-btn header__action-btn--withProduct btn btn--action btn--action-mobile"
+											type="button"
+											aria-label="Во вкладку сохраненное"
+										>
+											<svg
+												class="header__action-icon"
+												width="24"
+												height="24"
+												aria-hidden="true"
+											>
+												<use xlink:href="images/sprite.svg#chest"></use>
+											</svg>
+										</button>
+									</div>
 								</div>
 								<div class="main-nav__top-menu">
 									<button
@@ -393,6 +450,962 @@
 							</div>
 						</div>
 					</div>
+					<article class="choice-menu">
+						<div class="choice-menu__main-wrapper">
+							<ul class="choice-list">
+								<li class="choice-list__item" id="choicePhones">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#phone-blue"></use>
+									</svg>
+									<h3 class="choice-list__choice-title">
+										Смартфоны и&nbsp; гаджеты
+									</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+								<li class="choice-list__item" id="choicePc">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#laptop-blue"></use>
+									</svg>
+									<h3 class="choice-list__choice-title">
+										Ноутбуки и&nbsp; компьютеры
+									</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+								<li class="choice-list__item" id="choiceTv">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#tv-blue"></use>
+									</svg>
+									<h3 class="choice-list__choice-title">
+										Телевизоры и&nbsp; цифровое&nbsp; ТВ
+									</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+								<li class="choice-list__item" id="choiceAudio">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#speaker-blue"></use>
+									</svg>
+									<h3 class="choice-list__choice-title">Аудиотехника</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+								<li class="choice-list__item" id="choicePromo">
+									<a class="choice-list__link" href="#"
+										><svg
+											class="choice-list__link-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#flame-blue"></use>
+										</svg>
+										<span class="choice-list__title">Акции</span>
+									</a>
+								</li>
+								<li class="choice-list__item" id="choiceNew">
+									<a class="choice-list__link" href="#"
+										><svg
+											class="choice-list__link-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#new-blue"></use>
+										</svg>
+										<span class="choice-list__title">Новинки</span>
+									</a>
+								</li>
+							</ul>
+							<div class="choice-menu__show-choices">
+								<div class="choice-menu__phones" id="phonesMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Смартфоны</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Apple Iphone</span
+													><span class="inner-choice__link-count">123</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Смартфоны</span
+													><span class="inner-choice__link-count">227</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Iphone 16</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Складные</span
+													><span class="inner-choice__link-count">30</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">realme</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Huawei Mate X6</span
+													><span class="inner-choice__link-count">100</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Кнопочные</span
+													><span class="inner-choice__link-count">23</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Домашние</span
+													><span class="inner-choice__link-count">17</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Samsung</span
+													><span class="inner-choice__link-count">27</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Гаджеты</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Смарт-часы</span
+													><span class="inner-choice__link-count">15</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Смарт-кольца</span
+													><span class="inner-choice__link-count">34</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Наушники</span
+													><span class="inner-choice__link-count">21</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Гарнитуры</span
+													><span class="inner-choice__link-count">12</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Портативное аудио</span
+													><span class="inner-choice__link-count">42</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Умные гаджеты</span
+													><span class="inner-choice__link-count">46</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Очки VR</span
+													><span class="inner-choice__link-count">49</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Для блогеров</span
+													><span class="inner-choice__link-count">32</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="choice-menu__pc" id="pcMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Ноутбуки</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">123</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">227</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">30</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">23</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">17</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">27</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Компьютеры</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">15</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Lorem, ipsum.</span
+													><span class="inner-choice__link-count">34</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Lorem, ipsum.</span
+													><span class="inner-choice__link-count">21</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">12</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">42</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">46</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Lorem, ipsum dolor.</span
+													><span class="inner-choice__link-count">49</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">32</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="choice-menu__tv" id="tvMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Телевизоры</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">123</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">227</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">30</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Цифровое ТВ</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">15</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Lorem, ipsum.</span
+													><span class="inner-choice__link-count">34</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Lorem, ipsum.</span
+													><span class="inner-choice__link-count">21</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">12</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Lorem, ipsum dolor.</span
+													><span class="inner-choice__link-count">49</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">32</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="choice-menu__audio" id="audioMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Аудиотехника</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">123</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">227</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">30</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Lorem.</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</div>
 		</header>

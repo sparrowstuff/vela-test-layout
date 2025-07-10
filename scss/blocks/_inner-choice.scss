@@ -1,0 +1,49 @@
+.inner-choice {
+	@include flexCenter(column, flex-start, unset);
+	gap: 1rem;
+	$root: &;
+
+	// &__item {
+	// 	@include flexCenter(row, center, flex-start);
+	// 	gap: 0.31rem;
+	// }
+
+	&__link {
+		@include flexCenter(row, center, flex-start);
+		gap: 0.31rem;
+		width: 100%;
+		min-width: 12.06rem;
+
+		&:hover,
+		&:focus-visible {
+			#{$root}__arrow-icon {
+				opacity: 1;
+				color: $blue;
+			}
+
+			#{$root}__link-text {
+				color: $blue;
+			}
+		}
+	}
+
+	&__link-text {
+		font-size: $rem-1;
+		font-weight: 500;
+		line-height: 100%;
+		transition: color $transition-300;
+	}
+
+	&__link-count {
+		font-size: $rem-1;
+		font-weight: 400;
+		color: $main;
+		opacity: 0.7;
+	}
+
+	&__arrow-icon {
+		margin-left: auto;
+		transition: opacity $transition-300, color $transition-300;
+		opacity: 0;
+	}
+}
