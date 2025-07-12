@@ -4,8 +4,10 @@
 	background-color: $white;
 	border-radius: 0.5rem;
 	transition: opacity $transition-300;
-	// pointer-events: none;
-	// opacity: 0;
+	position: absolute;
+	top: 90%;
+	pointer-events: none;
+	opacity: 0;
 
 	&--show {
 		opacity: 1;
@@ -18,6 +20,10 @@
 		padding: 1.87rem 0 1.43rem 0;
 	}
 
+	&__show-choices {
+		position: relative;
+	}
+
 	&__phones,
 	&__pc,
 	&__tv,
@@ -25,6 +31,12 @@
 		@include flexCenter(row, flex-start, unset);
 		gap: 2.56rem;
 		margin-top: 0.62rem;
+		transition: opacity $transition-300;
+
+		pointer-events: none;
+		opacity: 0;
+
+		position: absolute;
 	}
 
 	&__inner-wrapper {
@@ -36,5 +48,10 @@
 		font-size: $rem-187;
 		font-weight: 500;
 		line-height: 100%;
+	}
+
+	&__show {
+		pointer-events: all;
+		opacity: 1;
 	}
 }

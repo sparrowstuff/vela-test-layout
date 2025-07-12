@@ -1065,6 +1065,10 @@ button {
   background-color: #ffffff;
   border-radius: 0.5rem;
   transition: opacity ease-in 0.3s;
+  position: absolute;
+  top: 90%;
+  pointer-events: none;
+  opacity: 0;
 }
 .choice-menu--show {
   opacity: 1;
@@ -1078,6 +1082,9 @@ button {
   gap: 2.56rem;
   padding: 1.87rem 0 1.43rem 0;
 }
+.choice-menu__show-choices {
+  position: relative;
+}
 .choice-menu__phones, .choice-menu__pc, .choice-menu__tv, .choice-menu__audio {
   display: flex;
   flex-direction: row;
@@ -1085,6 +1092,10 @@ button {
   justify-content: unset;
   gap: 2.56rem;
   margin-top: 0.62rem;
+  transition: opacity ease-in 0.3s;
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
 }
 .choice-menu__inner-wrapper {
   display: flex;
@@ -1097,6 +1108,10 @@ button {
   font-size: 1.87rem;
   font-weight: 500;
   line-height: 100%;
+}
+.choice-menu__show {
+  pointer-events: all;
+  opacity: 1;
 }
 
 .choice-list {
@@ -1145,6 +1160,7 @@ button {
   font-weight: 500;
   font-size: 1rem;
   line-height: 100%;
+  width: 100%;
 }
 
 .inner-choice {
