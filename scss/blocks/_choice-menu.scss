@@ -1,17 +1,23 @@
 .choice-menu {
-	min-height: 26.68rem;
+	min-height: 29.68rem;
 	min-width: 55.75rem;
 	background-color: $white;
 	border-radius: 0.5rem;
 	transition: opacity $transition-300;
 	position: absolute;
-	top: 90%;
+	top: 101%;
+	left: 11.5rem;
 	pointer-events: none;
 	opacity: 0;
 
 	&--show {
 		opacity: 1;
 		pointer-events: all;
+	}
+
+	&--events {
+		min-height: 22.06rem;
+		left: 17%;
 	}
 
 	&__main-wrapper {

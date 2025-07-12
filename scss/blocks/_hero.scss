@@ -1,0 +1,118 @@
+.hero {
+	padding: 11.12rem 0 0 0;
+	overflow: hidden;
+	background: linear-gradient(
+		97deg,
+		rgba(95, 17, 118, 1) 5%,
+		rgba(79, 224, 255, 1) 100%
+	);
+
+	@media (max-width: 48rem) {
+		padding: 15rem 0 0 0;
+		background: linear-gradient(
+			97deg,
+			rgba(118, 43, 128, 1) 5%,
+			rgba(148, 235, 255, 1) 100%
+		);
+	}
+
+	@media (max-width: 31.25rem) {
+		padding: 13rem 0 0 0;
+	}
+
+	&__inner-wrapper {
+		padding: 5.25rem 0 5.18rem 3.75rem;
+		@include flexCenter(column, flex-start, unset);
+		gap: 1.62rem;
+		position: relative;
+		min-height: 26.43rem;
+
+		@media (max-width: 48rem) {
+			padding: 3rem 0 2rem 0;
+		}
+
+		@media (max-width: 31.25rem) {
+			padding: 2rem 0 2rem 0;
+			gap: 0.87rem;
+		}
+	}
+
+	&__picture--main {
+		position: absolute;
+		top: 1%;
+		right: -4%;
+
+		@media (max-width: 64rem) {
+			display: none;
+		}
+	}
+
+	&__picture--small {
+		position: absolute;
+		bottom: 0px;
+		right: -7%;
+
+		@media (min-width: 64rem) {
+			display: none;
+		}
+
+		@media (max-width: 48rem) {
+			right: -9%;
+		}
+	}
+
+	&__text-wrapper {
+		@include flexCenter(column, flex-start, unset);
+		gap: 1.62rem;
+		z-index: 5;
+	}
+
+	&__title {
+		font-family: $tenor;
+		font-size: $rem-2;
+		font-weight: 400;
+		line-height: 100%;
+		color: $white;
+		max-width: 45.56rem;
+
+		@media (max-width: 48rem) {
+			line-height: 124%;
+			font-size: $rem-15;
+			max-width: 20.62rem;
+		}
+	}
+
+	&__text {
+		font-family: $tenor;
+		font-size: $rem-15;
+		line-height: 105%;
+		font-weight: 400;
+		color: $white;
+		max-width: 51rem;
+
+		@media (max-width: 48rem) {
+			line-height: 124%;
+			font-size: $rem-087;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			-webkit-line-clamp: 3;
+		}
+	}
+
+	&__catalog-link {
+		font-size: $rem-1;
+		line-height: 100%;
+		padding: 1rem 2.5rem 1rem 2.5rem;
+		color: $purple;
+		background-color: $white;
+		border-radius: 0.5rem;
+		transition: scale $transition-300, color $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			color: $blue;
+			scale: 1.1;
+		}
+	}
+}

@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	}
 
-	// меню событий
+	// управление меню событий
 	function eventsMenuActions() {
 		const eventMenus = [
 			document.getElementById('whoMenu'),

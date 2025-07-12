@@ -1,6 +1,8 @@
 .header {
-	// сделать фикс header
-	// z-index: 9999 !important;
+	position: fixed;
+	z-index: 9999 !important;
+	top: 0;
+	left: 0;
 	width: 100dvw;
 	$root: &;
 
@@ -183,6 +185,7 @@
 	&__main-menu {
 		padding: 1rem 0 1.5rem 0;
 		position: relative;
+		background-color: $white;
 
 		@media (max-width: 64rem) {
 			padding: 0.62rem 0;
