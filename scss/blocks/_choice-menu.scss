@@ -27,7 +27,10 @@
 	&__phones,
 	&__pc,
 	&__tv,
-	&__audio {
+	&__audio,
+	&__who,
+	&__what,
+	&__why {
 		@include flexCenter(row, flex-start, unset);
 		gap: 2.56rem;
 		margin-top: 0.62rem;

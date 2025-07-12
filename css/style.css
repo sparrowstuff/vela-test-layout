@@ -1085,7 +1085,7 @@ button {
 .choice-menu__show-choices {
   position: relative;
 }
-.choice-menu__phones, .choice-menu__pc, .choice-menu__tv, .choice-menu__audio {
+.choice-menu__phones, .choice-menu__pc, .choice-menu__tv, .choice-menu__audio, .choice-menu__who, .choice-menu__what, .choice-menu__why {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -1130,6 +1130,7 @@ button {
   gap: 1rem;
   padding: 0.81rem 1.43rem 0.81rem 1.87rem;
   width: 100%;
+  min-width: 21.12rem;
   cursor: pointer;
   transition: background-color ease-in 0.3s;
 }
