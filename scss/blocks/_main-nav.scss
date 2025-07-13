@@ -36,6 +36,25 @@
 				color: $blue;
 			}
 		}
+
+		@media (max-width: 64rem) {
+			#{$root}__arrow-icon {
+				margin-left: auto;
+				opacity: 0;
+			}
+
+			&:hover,
+			&:focus-visible,
+			&:active {
+				#{$root}__arrow-icon {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__arrow-icon {
+		transition: opacity $transition-300;
 	}
 
 	&__navigation-btn-text {
@@ -51,7 +70,11 @@
 	&__mobile-menu {
 		@include flexCenter(row, center, space-between);
 		gap: 0.62rem;
-		width: 97%;
+		width: 102%;
+
+		@media (max-width: 48rem) {
+			width: 104%;
+		}
 
 		@media (min-width: 64rem) {
 			display: none;
@@ -62,5 +85,10 @@
 	&__mobile-right-menu {
 		@include flexCenter(row, center, space-between);
 		gap: 0.37rem;
+	}
+
+	&__second-mobile-menu {
+		@include flexCenter(column, flex-start, unset);
+		gap: 0.62rem;
 	}
 }

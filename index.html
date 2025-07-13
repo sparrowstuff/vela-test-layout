@@ -92,7 +92,9 @@
 								>9:00 &nbsp;&mdash;&nbsp; 21:00</span
 							>
 						</div>
-						<nav class="header__top-menu-navigation">
+						<nav
+							class="header__top-menu-navigation header__top-menu-navigation--main"
+						>
 							<a class="header__top-menu-navigation-link" href="#">Доставка</a
 							><a class="header__top-menu-navigation-link" href="#">Оплата</a
 							><a class="header__top-menu-navigation-link" href="#">Контакты</a>
@@ -453,7 +455,7 @@
 					</div>
 					<article class="choice-menu choice-menu--main">
 						<div class="choice-menu__main-wrapper">
-							<ul class="choice-list">
+							<ul class="choice-list choice-list--main">
 								<li class="choice-list__item" id="choicePhones">
 									<svg
 										class="choice-list__icon"
@@ -1360,399 +1362,622 @@
 						</div>
 					</article>
 					<article class="choice-menu choice-menu--events">
-						<div class="choice-menu__events">
-							<div class="choice-menu__main-wrapper">
-								<ul class="choice-list">
-									<li class="choice-list__item" id="choiceWho">
-										<svg
-											class="choice-list__icon"
-											width="24"
-											height="24"
-											aria-hidden="true"
-										>
-											<use xlink:href="images/sprite.svg#people-blue"></use>
-										</svg>
-										<h3 class="choice-list__choice-title">Кому</h3>
-										<svg
-											class="choice-list__arrow-icon"
-											width="24"
-											height="24"
-											aria-hidden="true"
-										>
-											<use xlink:href="images/sprite.svg#arrow-right"></use>
-										</svg>
-									</li>
-									<li class="choice-list__item" id="choiceWhy">
-										<svg
-											class="choice-list__icon"
-											width="24"
-											height="24"
-											aria-hidden="true"
-										>
-											<use xlink:href="images/sprite.svg#knife-blue"></use>
-										</svg>
-										<h3 class="choice-list__choice-title">Повод</h3>
-										<svg
-											class="choice-list__arrow-icon"
-											width="24"
-											height="24"
-											aria-hidden="true"
-										>
-											<use xlink:href="images/sprite.svg#arrow-right"></use>
-										</svg>
-									</li>
-									<li class="choice-list__item" id="choiceWhat">
-										<svg
-											class="choice-list__icon"
-											width="24"
-											height="24"
-											aria-hidden="true"
-										>
-											<use
-												xlink:href="images/sprite.svg#computer-case-blue"
-											></use>
-										</svg>
-										<h3 class="choice-list__choice-title">Наполнение</h3>
-										<svg
-											class="choice-list__arrow-icon"
-											width="24"
-											height="24"
-											aria-hidden="true"
-										>
-											<use xlink:href="images/sprite.svg#arrow-right"></use>
-										</svg>
-									</li>
-								</ul>
-								<div class="choice-menu__show-choices">
-									<div class="choice-menu__who" id="whoMenu">
-										<div class="choice-menu__inner-wrapper">
-											<h4 class="choice-menu__title">Кому</h4>
-											<ul class="inner-choice">
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Для мужчин</span
-														><span class="inner-choice__link-count">123</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Для женщин</span
-														><span class="inner-choice__link-count">63</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text">Папе</span
-														><span class="inner-choice__link-count">120</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Сотрудникам</span
-														><span class="inner-choice__link-count">30</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text">Мужу</span
-														><span class="inner-choice__link-count">120</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Корпоративный</span
-														><span class="inner-choice__link-count">100</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-											</ul>
-										</div>
+						<div class="choice-menu__main-wrapper">
+							<ul class="choice-list">
+								<li class="choice-list__item" id="choiceWho">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#people-blue"></use>
+									</svg>
+									<h3 class="choice-list__choice-title">Кому</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+								<li class="choice-list__item" id="choiceWhy">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#knife-blue"></use>
+									</svg>
+									<h3 class="choice-list__choice-title">Повод</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+								<li class="choice-list__item" id="choiceWhat">
+									<svg
+										class="choice-list__icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use
+											xlink:href="images/sprite.svg#computer-case-blue"
+										></use>
+									</svg>
+									<h3 class="choice-list__choice-title">Наполнение</h3>
+									<svg
+										class="choice-list__arrow-icon"
+										width="24"
+										height="24"
+										aria-hidden="true"
+									>
+										<use xlink:href="images/sprite.svg#arrow-right"></use>
+									</svg>
+								</li>
+							</ul>
+							<div class="choice-menu__show-choices">
+								<div class="choice-menu__who" id="whoMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Кому</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Для мужчин</span
+													><span class="inner-choice__link-count">123</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Для женщин</span
+													><span class="inner-choice__link-count">63</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Папе</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Сотрудникам</span
+													><span class="inner-choice__link-count">30</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Мужу</span
+													><span class="inner-choice__link-count">120</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Корпоративный</span
+													><span class="inner-choice__link-count">100</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
 									</div>
-									<div class="choice-menu__why" id="whyMenu">
-										<div class="choice-menu__inner-wrapper">
-											<h4 class="choice-menu__title">Повод</h4>
-											<ul class="inner-choice">
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>День рождения</span
-														>
-														<span class="inner-choice__link-count">245</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Свадьба</span
-														>
-														<span class="inner-choice__link-count">132</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Новый год</span
-														>
-														<span class="inner-choice__link-count">178</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>8 Марта</span
-														>
-														<span class="inner-choice__link-count">95</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>23 Февраля</span
-														>
-														<span class="inner-choice__link-count">83</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text">Юбилей</span
-														><span class="inner-choice__link-count">100</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-											</ul>
-										</div>
+								</div>
+								<div class="choice-menu__why" id="whyMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Повод</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>День рождения</span
+													>
+													<span class="inner-choice__link-count">245</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Свадьба</span>
+													<span class="inner-choice__link-count">132</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Новый год</span
+													>
+													<span class="inner-choice__link-count">178</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">8 Марта</span>
+													<span class="inner-choice__link-count">95</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>23 Февраля</span
+													>
+													<span class="inner-choice__link-count">83</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Юбилей</span
+													><span class="inner-choice__link-count">100</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
 									</div>
-									<div class="choice-menu__what" id="whatMenu">
-										<div class="choice-menu__inner-wrapper">
-											<h4 class="choice-menu__title">Наполнение</h4>
-											<ul class="inner-choice">
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Сладости</span
-														>
-														<span class="inner-choice__link-count">158</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Алкоголь</span
-														><span class="inner-choice__link-count">63</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#">
-														<span class="inner-choice__link-text">Фрукты</span>
-														<span class="inner-choice__link-count">63</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#"
-														><span class="inner-choice__link-text"
-															>Чай или Кофе</span
-														><span class="inner-choice__link-count">78</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#">
-														<span class="inner-choice__link-text">Игрушки</span>
-														<span class="inner-choice__link-count">35</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-												<li class="inner-choice__item">
-													<a class="inner-choice__link" href="#">
-														<span class="inner-choice__link-text">Декор</span>
-														<span class="inner-choice__link-count">22</span>
-														<svg
-															class="inner-choice__arrow-icon"
-															width="24"
-															height="24"
-															aria-hidden="true"
-														>
-															<use
-																xlink:href="images/sprite.svg#arrow-right"
-															></use>
-														</svg>
-													</a>
-												</li>
-											</ul>
-										</div>
+								</div>
+								<div class="choice-menu__what" id="whatMenu">
+									<div class="choice-menu__inner-wrapper">
+										<h4 class="choice-menu__title">Наполнение</h4>
+										<ul class="inner-choice">
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Сладости</span>
+													<span class="inner-choice__link-count">158</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text">Алкоголь</span
+													><span class="inner-choice__link-count">63</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#">
+													<span class="inner-choice__link-text">Фрукты</span>
+													<span class="inner-choice__link-count">63</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#"
+													><span class="inner-choice__link-text"
+														>Чай или Кофе</span
+													><span class="inner-choice__link-count">78</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#">
+													<span class="inner-choice__link-text">Игрушки</span>
+													<span class="inner-choice__link-count">35</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+											<li class="inner-choice__item">
+												<a class="inner-choice__link" href="#">
+													<span class="inner-choice__link-text">Декор</span>
+													<span class="inner-choice__link-count">22</span>
+													<svg
+														class="inner-choice__arrow-icon"
+														width="24"
+														height="24"
+														aria-hidden="true"
+													>
+														<use
+															xlink:href="images/sprite.svg#arrow-right"
+														></use>
+													</svg>
+												</a>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>
+						</div>
+					</article>
+					<article
+						class="choice-menu choice-menu--mobile"
+						id="choiceMenuMobile"
+					>
+						<div class="choice-menu__info-wrapper">
+							<div class="choice-menu__info-block">
+								<div class="choice-menu__text-info">
+									<a
+										class="header__location-link header__location-link--mobile"
+										href="#"
+										aria-label="Выбрать местоположение"
+									>
+										<svg
+											class="header__location-icon"
+											aria-hidden="true"
+											width="12"
+											height="14"
+										>
+											<use xlink:href="./images/sprite.svg#location"></use>
+										</svg>
+										<span class="header__location-text">Сайлент-Хилл</span>
+									</a>
+									<div class="header__top-menu-info">
+										<svg
+											class="header__clock-icon"
+											width="16"
+											height="16"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#clock"></use>
+										</svg>
+										<span class="header__top-menu-info-text">Ежедневно</span>
+										<span class="header__top-menu-info-time"
+											>9:00 &nbsp;&mdash;&nbsp; 21:00</span
+										>
+									</div>
+								</div>
+								<nav class="socials-menu socials-menu--mobile">
+									<a
+										class="socials-menu__telegram-link"
+										href="#"
+										aria-label="Перейти в Telegram"
+									>
+										<svg
+											class="socials-menu__socials-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#telegram"></use>
+										</svg>
+									</a>
+									<a
+										class="socials-menu__whatsapp-link"
+										href="#"
+										aria-label="Перейти в WhatsApp"
+									>
+										<svg
+											class="socials-menu__socials-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#whatsapp"></use>
+										</svg>
+									</a>
+								</nav>
+							</div>
+							<div class="choice-menu__menu-wrapper">
+								<nav class="main-nav__second-mobile-menu">
+									<button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#catalog"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text">Каталог</span>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+									<button
+										class="main-nav__navigation-btn main-nav__navigation-btn--action btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#flame-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text">Акции</span>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-right"></use>
+										</svg></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#thunder-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Горячее предложение</span
+										>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-right"></use>
+										</svg></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#skull-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Подарочные наборы</span
+										>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-right"></use>
+										</svg></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+										id="eventsBtn2"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#paper-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text">События</span>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-right"></use>
+										</svg></button
+									><button
+										class="main-nav__navigation-btn btn btn--navigation"
+										type="button"
+									>
+										<svg
+											class="main-nav__btn-icon"
+											width="20"
+											height="20"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#ork-blue"></use>
+										</svg>
+										<span class="main-nav__navigation-btn-text"
+											>Наши бренды</span
+										>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-right"></use>
+										</svg>
+									</button>
+								</nav>
+							</div>
+							<button
+								class="header__computer-btn btn btn--computer btn--computer-mobile"
+								type="button"
+							>
+								<svg
+									class="header__computer-plus-icon"
+									width="16"
+									height="16"
+									aria-hidden="true"
+								>
+									<use xlink:href="images/sprite.svg#plus-blue"></use>
+								</svg>
+								<span class="header__computer-btn-text">Собрать компьютер</span>
+							</button>
+							<nav
+								class="header__top-menu-navigation header__top-menu-navigation--mobile"
+							>
+								<a class="header__top-menu-navigation-link" href="#">Доставка</a
+								><a class="header__top-menu-navigation-link" href="#">Оплата</a
+								><a class="header__top-menu-navigation-link" href="#"
+									>Контакты</a
+								>
+							</nav>
 						</div>
 					</article>
 				</div>

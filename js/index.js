@@ -5,6 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		menuToShow.classList.add('choice-menu__show')
 	}
 
+	const choiceMenuMainWrapper = document.querySelectorAll(
+		'.choice-menu__main-wrapper'
+	)
+
+	function getMoreMinWidth(array) {
+		array.forEach(wrapper => (wrapper.style.minWidth = '55.75rem'))
+	}
+
 	// управление бургер меню
 	const burgerBtn = document.getElementById('navigationBtn')
 	const mobileBurgerBtn = document.getElementById('navigationBtnMobile')
@@ -24,18 +32,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		phoneChoice.addEventListener('click', () => {
 			showMenu(menus, menus[0])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 
 		pcChoice.addEventListener('click', () => {
 			showMenu(menus, menus[1])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 
 		tvChoice.addEventListener('click', () => {
 			showMenu(menus, menus[2])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 
 		audioChoice.addEventListener('click', () => {
 			showMenu(menus, menus[3])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 
 		burgerBtn.addEventListener('click', () => {
@@ -49,15 +61,18 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 
+		// на мобильной кнопке открывается другое меню choice-list--mobile !!!! сделать!!!!!
 		mobileBurgerBtn.addEventListener('click', () => {
 			mobileBurgerBtn.classList.toggle('navigation-btn--transform')
-			const choiceMenu = document.querySelector('.choice-menu')
+			// const choiceMenu = document.querySelector('.choice-menu')
+			// choiceMenu.classList.toggle('choice-menu--show')
+			const choiceMenu = document.getElementById('choiceMenuMobile')
 			choiceMenu.classList.toggle('choice-menu--show')
 
-			const eventsMenu = document.querySelector('.choice-menu--events')
-			if (eventsMenu.classList.contains('choice-menu--show')) {
-				eventsMenu.classList.remove('choice-menu--show')
-			}
+			// const eventsMenu = document.querySelector('.choice-menu--events')
+			// if (eventsMenu.classList.contains('choice-menu--show')) {
+			// 	eventsMenu.classList.remove('choice-menu--show')
+			// }
 		})
 	}
 
@@ -90,14 +105,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		// console.log(eventMenus, whoChoice, whyChoice, whatChoice)
 		whoChoice.addEventListener('click', () => {
 			showMenu(eventMenus, eventMenus[0])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 
 		whyChoice.addEventListener('click', () => {
 			showMenu(eventMenus, eventMenus[1])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 
 		whatChoice.addEventListener('click', () => {
 			showMenu(eventMenus, eventMenus[2])
+			getMoreMinWidth(choiceMenuMainWrapper)
 		})
 	}
 

@@ -36,6 +36,10 @@
 
 		@include flexCenter(row, center, unset);
 		gap: 0.62rem;
+
+		@media (max-width: 64rem) {
+			width: 90vw;
+		}
 	}
 
 	&--computer {
@@ -46,6 +50,13 @@
 	&--computer-main {
 		@media (max-width: 64rem) {
 			display: none;
+		}
+	}
+
+	&--computer-mobile {
+		@media (min-width: 64rem) {
+			display: flex;
+			width: 100%;
 		}
 	}
 
