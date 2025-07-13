@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
 	const burgerBtn = document.getElementById('navigationBtn')
 	const mobileBurgerBtn = document.getElementById('navigationBtnMobile')
 
-	function burgerMenuActions() {
-		const menus = [
-			document.getElementById('phonesMenu'),
-			document.getElementById('pcMenu'),
-			document.getElementById('tvMenu'),
-			document.getElementById('audioMenu'),
-		]
+	const menus = [
+		document.getElementById('phonesMenu'),
+		document.getElementById('pcMenu'),
+		document.getElementById('tvMenu'),
+		document.getElementById('audioMenu'),
+	]
 
+	function burgerMenuActions() {
 		const phoneChoice = document.getElementById('choicePhones')
 		const pcChoice = document.getElementById('choicePc')
 		const tvChoice = document.getElementById('choiceTv')
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			const choiceMenu = document.getElementById('choiceMenuMobile')
 			choiceMenu.classList.toggle('choice-menu--show')
 
-			mobileNavigation.style.display = 'none'
+			// mobileNavigation.style.display = 'none'
 
 			// const eventsMenu = document.querySelector('.choice-menu--events')
 			// if (eventsMenu.classList.contains('choice-menu--show')) {
@@ -126,21 +126,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// управление мобильным меню:
 
-	// const mobileMenu = document.getElementById('secondMobileMenu')
-	// const catalogBtn = document.getElementById('catalogBtn')
-	// const backBtn = document.getElementById('backBtn')
-	// const backBtnText = document.getElementById('backBtnText')
+	const mobileMenu = document.getElementById('secondMobileMenu')
+	const choiceMobileMenu = document.querySelector('.choice-menu--mobile')
+	const catalogBtn = document.getElementById('catalogBtn')
+	const backBtn = document.getElementById('backBtn')
+	const backBtnText = document.getElementById('backBtnText')
 
-	// const secondPhoneChoice = document.getElementById('choicePhones2')
-	// const secondPcChoice = document.getElementById('choicePc2')
-	// const secondTvChoice = document.getElementById('choiceTv2')
-	// const secondAudioChoice = document.getElementById('choiceAudio2')
-
-	// catalogBtn.addEventListener('click', () => {
-	// 	mobileMenu.innerHTML = ''
-	// 	backBtn.style.display = 'flex'
-	// 	backBtnText.textContent = 'Каталог'
-
-	// 	mobileMenu.append(backBtn)
-	// })
+	const secondPhoneChoice = document.getElementById('choicePhones2')
+	const secondPcChoice = document.getElementById('choicePc2')
+	const secondTvChoice = document.getElementById('choiceTv2')
+	const secondAudioChoice = document.getElementById('choiceAudio2')
+	const choiceList = document.querySelector('.choice-list--main')
 })
