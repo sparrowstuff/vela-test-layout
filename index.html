@@ -1817,10 +1817,30 @@
 								</nav>
 							</div>
 							<div class="choice-menu__menu-wrapper">
-								<nav class="main-nav__second-mobile-menu">
+								<nav class="main-nav__second-mobile-menu" id="secondMobileMenu">
+									<button
+										class="main-nav__back-btn main-nav__navigation-btn btn btn--navigation"
+										type="button"
+										aria-label="Назад"
+										id="backBtn"
+									>
+										<svg
+											class="main-nav__arrow-icon"
+											width="24"
+											height="24"
+											aria-hidden="true"
+										>
+											<use xlink:href="images/sprite.svg#arrow-left"></use>
+										</svg>
+										<span
+											class="main-nav__back-btn-text"
+											id="backBtnText"
+										></span>
+									</button>
 									<button
 										class="main-nav__navigation-btn btn btn--navigation"
 										type="button"
+										id="catalogBtn"
 									>
 										<svg
 											class="main-nav__btn-icon"

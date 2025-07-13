@@ -53,4 +53,11 @@
 			display: none;
 		}
 	}
+
+	&--mobile {
+		@media (min-width: 64rem) {
+			@include flexCenter(column, flex-start, unset);
+			gap: 0.62rem;
+		}
+	}
 }

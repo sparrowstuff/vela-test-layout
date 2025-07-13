@@ -1023,6 +1023,19 @@ button {
   justify-content: unset;
   gap: 0.62rem;
 }
+.main-nav__back-btn {
+  display: none;
+  background-color: transparent;
+}
+.main-nav__back-btn .main-nav__arrow-icon {
+  margin-left: unset;
+  opacity: 1;
+}
+.main-nav__back-btn-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+}
 
 .custom-search {
   width: 100%;
@@ -1225,7 +1238,7 @@ button {
 .choice-menu__text-info + .header__location-link {
   display: flex;
 }
-.choice-menu__info-wrapper {
+.choice-menu__menu-wrapper, .choice-menu__info-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1285,6 +1298,15 @@ button {
 @media (max-width: 64rem) {
   .choice-list--main {
     display: none;
+  }
+}
+@media (min-width: 64rem) {
+  .choice-list--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: unset;
+    gap: 0.62rem;
   }
 }
 

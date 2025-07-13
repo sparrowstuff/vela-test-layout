@@ -91,4 +91,20 @@
 		@include flexCenter(column, flex-start, unset);
 		gap: 0.62rem;
 	}
+
+	&__back-btn {
+		display: none;
+		background-color: transparent;
+
+		#{$root}__arrow-icon {
+			margin-left: unset;
+			opacity: 1;
+		}
+	}
+
+	&__back-btn-text {
+		font-size: $rem-15;
+		font-weight: 400;
+		line-height: 100%;
+	}
 }

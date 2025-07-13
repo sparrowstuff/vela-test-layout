@@ -188,5 +188,9 @@
     <rect x="2.18182" y="10.4546" width="13.0909" height="1.45455" rx="0.727273" fill="#4888FF"/>
   </symbol>
 
+  <symbol id='arrow-left' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
 
 </svg>

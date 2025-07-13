@@ -118,6 +118,7 @@
 		}
 	}
 
+	&__menu-wrapper,
 	&__info-wrapper {
 		@include flexCenter(column, flex-start, unset);
 		gap: 1.5rem;
