@@ -123,4 +123,8 @@
 		@include flexCenter(column, flex-start, unset);
 		gap: 1.5rem;
 	}
+
+	&__menu-wrapper {
+		position: relative;
+	}
 }

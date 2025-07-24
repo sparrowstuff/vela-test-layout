@@ -126,15 +126,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// управление мобильным меню:
 
-	const mobileMenu = document.getElementById('secondMobileMenu')
-	const choiceMobileMenu = document.querySelector('.choice-menu--mobile')
-	const catalogBtn = document.getElementById('catalogBtn')
-	const backBtn = document.getElementById('backBtn')
-	const backBtnText = document.getElementById('backBtnText')
+	// второе меню с каталог, акции и т.д.
+	const mainNavSecondMobileMenu = document.getElementById('secondMobileMenu')
+	// console.log(mainNavSecondMobileMenu)
 
-	const secondPhoneChoice = document.getElementById('choicePhones2')
-	const secondPcChoice = document.getElementById('choicePc2')
-	const secondTvChoice = document.getElementById('choiceTv2')
-	const secondAudioChoice = document.getElementById('choiceAudio2')
-	const choiceList = document.querySelector('.choice-list--main')
+	const choiceListMain = document.querySelector('.choice-list--main')
+
+	function mobileMenuActions() {
+		const catalogBtn = document.getElementById('catalogBtn')
+
+		catalogBtn.addEventListener('click', () => {
+			let cloned = choiceListMain.cloneNode(true)
+
+			// кнопка компа
+			const computerBtn = document.querySelector('.btn--computer-mobile')
+			const infoWrapper = document.querySelector('choice-menu__info-wrapper')
+
+			mainNavSecondMobileMenu.innerHTML = ''
+
+			cloned.style.display = 'flex'
+			infoWrapper.insertBefore(cloned, computerBtn)
+		})
+	}
+
+	mobileMenuActions()
 })

@@ -1245,6 +1245,9 @@ button {
   justify-content: unset;
   gap: 1.5rem;
 }
+.choice-menu__menu-wrapper {
+  position: relative;
+}
 
 .choice-list {
   display: flex;
